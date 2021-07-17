@@ -1,0 +1,16 @@
+<%- include("partials/header") %>
+<div class="container-fluid mt-5">
+	<h1 class="main text-center">User login</h1>
+	<div class="row justify-content-center">
+		<form class="form-signin" action="/login" method="POST">
+			<div class="form-group">
+				<input type="text" class="form-control" name="username" placeholder="Username" required>
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-control" name="password" placeholder="Password" required>
+			</div>
+			<button class="btn btn-success form-control" type="submit">Let's GO!</button>
+		</form>
+	</div>
+</div>
+<%- include("partials/footer") %>
